@@ -15,7 +15,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile("vincentResume.pdf", { root: "." });
+  res.sendFile("./public/vincentResume.pdf", { root: "." });
 });
 
 app.listen(5050, () => console.log("🚀 Server is listening on port 5050..."));
